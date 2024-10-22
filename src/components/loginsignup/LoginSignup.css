@@ -1,0 +1,203 @@
+.mother {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 500px;
+}
+.mother1 {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 1000px;
+}
+.mother3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.header,
+.usernameText,
+.usernameInput,
+.passwordText,
+.passwordInput,
+.loginButton,
+.createAccount {
+  height: 80px;
+  margin: 10px;
+}
+.underline {
+  height: 8px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: black;
+}
+.underlineMother {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: black;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.usernameText {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.passwordText {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.input {
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  height: 70px;
+  width: 100vw;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+}
+
+.input3 {
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  height: 70px;
+  width: 100vw;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+  margin: 20px;
+}
+.firstnameInputt {
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  height: 70px;
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+}
+.lastnameInputt {
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  height: 70px;
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  outline: none;
+}
+.input1 {
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  height: 70px;
+  width: 100vw;
+  border: none;
+  border-radius: 10px;
+
+  background: transparent;
+  outline: none;
+}
+
+.usernameInput {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.passwordInput {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.forgotPassword {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+
+.linkFogotpassword {
+  color: rgb(100, 100, 252);
+  cursor: pointer;
+}
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+Link {
+  height: 80px;
+  width: 250px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background-color: #7c7c7c;
+  cursor: pointer;
+}
+.buttonLogin:hover {
+  color: rgb(75, 79, 83);
+  background-color: rgb(255, 255, 255);
+}
+
+.createAccount {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+
+.linkcreateAccount {
+  color: rgb(100, 100, 252);
+  cursor: pointer;
+}
+.Icon {
+  height: 35px;
+  width: 35px;
+  margin: 10px;
+}
+.nameContainer {
+  display: flex;
+}
+
+.motherFogotpassword {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
