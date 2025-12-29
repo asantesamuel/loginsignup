@@ -1,11 +1,30 @@
+
+import React, { useState } from "react";
+import axios from "axios";
 import "./LoginSignup.css";
 import UserIcon from "../Assets/user.png";
 import PasswordIcon from "../Assets/lock.png";
 import { useNavigate } from "react-router-dom";
-const LoginSignup = () => {
+const Login = () => {
   const navigate = useNavigate();
-  const handleButtonClick = () => {
-    navigate("/dashboard");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleButtonClick = async () => {
+    try {
+      const response = await axios.post("http://localhost:8083/login", {
+        username,
+        password,
+      });
+      if (response.data.success) {
+        navigate("/dashboard");
+      } else {
+        alert(response.data.success || "Login failed");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Login failed");
+    }
   };
   const handleButtonClick1 = () => {
     navigate("/signup");
@@ -33,6 +52,8 @@ const LoginSignup = () => {
                 type="text"
                 className="input"
                 placeholder="Enter your username or email"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
               />
             </div>
           </div>
@@ -46,6 +67,8 @@ const LoginSignup = () => {
                 type="password"
                 className="input1"
                 placeholder="Enter your password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
           </div>
@@ -100,4 +123,4 @@ const LoginSignup = () => {
   );
 };
 
-export default LoginSignup;
+export default Login;
